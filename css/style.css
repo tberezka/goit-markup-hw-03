@@ -58,12 +58,18 @@ body {
 }
 
 .section-title {
-  color: var(--primary-text-color);
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .temporary-background {
@@ -82,13 +88,14 @@ body {
 }
 
 .logo-secondpart-top {
-  color: var(--logo-top-color);
+  margin-right: 93px;
 
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  color: var(--logo-top-color);
 }
 
 .logo-secondpart-down {
@@ -102,11 +109,40 @@ body {
 }
 
 /* Header */
+.header-container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .header-items {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
+}
+.nav-list-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-cont-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-items.header-left {
@@ -127,11 +163,16 @@ body {
 }
 
 /* Hero */
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .hero-title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 
   font-weight: 900;
   font-size: 44px;
@@ -147,10 +188,11 @@ body {
   min-width: 200px;
   background-color: var(--accent-color);
   height: 50px;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
 
   font-family: inherit;
   font-weight: 700;
@@ -162,13 +204,28 @@ body {
 }
 
 /* преимущества */
+.benefits {
+  padding-top: 94px;
+}
+.benefits-list {
+  display: flex;
+}
+
+.benefits-items {
+  width: 270px;
+}
+
+.benefits-items:not(:last-child) {
+  margin-right: 30px;
+}
 .benefits-title {
-  color: var(--primary-text-color);
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 .benefits-text {
   color: var(--second-text-color);
@@ -177,15 +234,48 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* чм мы занимаемся */
+.services {
+  display: flex;
+}
+
+.services .items:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* команда */
+.team-section {
+  background-color: var(--filter-btn-color);
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.team-list {
+  flex-basis: calc((100% - 3 * 30) / 4);
+  margin-left: 30px;
+  padding-bottom: 30px;
+  background-color: var(--third-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* .team-list:not(:last-child) {
+  margin-right: 30px;
+} */
+
 .team-name {
-  color: var(--primary-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 .team-position {
   color: var(--second-text-color);
