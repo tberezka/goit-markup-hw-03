@@ -117,17 +117,14 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header-container,
+.nav-list {
   display: flex;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.nav-list {
-  display: flex;
 }
 
 .header-contacts {
