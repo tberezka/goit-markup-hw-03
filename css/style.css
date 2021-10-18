@@ -170,9 +170,6 @@ body {
 /* Hero */
 .hero {
   background-color: var(--first-decor-color);
-}
-
-.hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -219,15 +216,17 @@ body {
 }
 .benefits-list {
   display: flex;
+  margin-left: -30px;
 }
 
 .benefits-items {
-  width: 270px;
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
 }
 
-.benefits-items:not(:last-child) {
+/* .benefits-items:not(:last-child) {
   margin-right: 30px;
-}
+} */
 .benefits-title {
   margin-bottom: 10px;
 
@@ -247,13 +246,15 @@ body {
 /* чм мы занимаемся */
 .services {
   display: flex;
+  margin-left: -30px;
 }
 .section-services {
   background-color: var(--primary-background-color);
 }
 
-.services .items:not(:last-child) {
-  margin-right: 30px;
+.services .items {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-left: 30px;
 }
 
 /* команда */
@@ -266,7 +267,7 @@ body {
   margin-left: -30px;
 }
 .team-list {
-  flex-basis: calc((100% - 3 * 30) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   margin-left: 30px;
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -305,9 +306,6 @@ body {
 /* footer */
 .footer {
   background-color: var(--first-decor-color);
-}
-
-.footer-conteiner {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -386,9 +384,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 .worklist-items {
-  flex-basis: calc((100% - 2 * 30) / 3);
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
 }
